@@ -69,8 +69,8 @@ function GWpage() {
   ))}
 </div>
 <br></br>
-{selectedBedId && <div>
-
+{selectedBedId && selectedColor==="green" && <div style={{marginLeft:460}}>
+    *Scroll Down, to view the patients list
   </div>}
 <br></br>
             <div className="ward-container">

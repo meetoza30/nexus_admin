@@ -10,7 +10,7 @@ return(
       
         <h1 id='dashead'>Welcome Doctor! This is your Dashboard.</h1>
         <div className="container">
-        <Dashcard cardname="Add a patient" img="add-patient" bgColor="green"/>
+        <Dashcard cardname="Add a patient" img="add_patient" bgColor="green"/>
         <Dashcard cardname="Clinic (OPD)" img="opd" bgColor="red" />
         <Dashcard cardname="IPD" img="ipd" bgColor="orange"/>
         </div>

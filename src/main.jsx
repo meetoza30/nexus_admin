@@ -11,6 +11,7 @@ import GWpage from './Components/GWpage.jsx'
 import { WardProvider } from './Contexts/WardContext.jsx'
 import PatientDetails from './Components/PatientDetails.jsx'
 import BedAssign from './Components/BedAssign.jsx'
+import AddPatient from './Components/AddPatient.jsx'
 
 const router = createHashRouter([
   {
@@ -21,6 +22,10 @@ const router = createHashRouter([
     {
       path: '/opd',
       element: <Opd />
+    },
+    {
+      path: '/add_patient',
+      element: <AddPatient />
     },
     {
       path: '/opd/:id',

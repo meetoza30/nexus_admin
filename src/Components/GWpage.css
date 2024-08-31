@@ -16,7 +16,7 @@
 }
 .gwlayoutcontain{
     width: 80vw;
-    height: 75vh;
+    height: 85vh;
     background-color: rgb(227, 227, 227);
     padding: 15px 15px;
     margin-top: 5%;
@@ -38,6 +38,8 @@
     padding: 3px 3px;
     box-shadow: 1px 1px 7px black;
     cursor: pointer;
+    width: 7vw;
+    margin-left: 10px;
 }
 .patient-details-box {
     background-color: #f0f0f0;
@@ -70,7 +72,7 @@
 
 }
 .bed-icon {
-    width: 10%;
+    width: 12%;
     height: 10%;
     display: flex;
     flex-direction: column;
