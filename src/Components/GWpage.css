@@ -1,0 +1,118 @@
+/* Container for the ward */
+.ward-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    /* gap: 20px;  */
+    padding: 20px;
+    max-width: 70vw;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* margin-left: 15%; */
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+}
+.gwlayoutcontain{
+    width: 80vw;
+    height: 75vh;
+    background-color: rgb(227, 227, 227);
+    padding: 15px 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 14%;
+    border: 2px solid black;
+    /* margin-top: 15%; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+
+}
+#more_btn{
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-size: medium;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px 3px;
+    box-shadow: 1px 1px 7px black;
+    cursor: pointer;
+}
+.patient-details-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.bed-assign-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#pat_details{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdbdb;
+    border-radius: 10px;
+
+}
+.bed-icon {
+    width: 10%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+.imgicon{
+    margin-left: 5%;
+}
+.bed-icon.green {
+    background-color: green;
+}
+
+/* Red bed (occupied) */
+.bed-icon.red {
+    background-color: red;
+}
+
+/* Hover effect */
+.bed-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bed-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bed-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+}

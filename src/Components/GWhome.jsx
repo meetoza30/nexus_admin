@@ -14,8 +14,8 @@ function GWhome(){
         <Navbar />
         <div className="gwcontain">
         <div className="gwcardscontain">
-            <Link className="gwcard">General Ward-1</Link>
-            <Link className="gwcard">General Ward-2</Link>
+            <Link to="/ipd/general_ward/gw1" className="gwcard">General Ward-1</Link>
+            <Link to="/ipd/general_ward/gw2" className="gwcard">General Ward-2</Link>
             </div>
             <div className="gwcardscontain">
             <Link className="gwcard">General Ward-3</Link>

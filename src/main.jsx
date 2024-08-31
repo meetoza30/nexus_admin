@@ -7,6 +7,10 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import AppointInfo from './Components/AppointInfo.jsx'
 import IPDhome from './Components/Ipdhome.jsx'
 import GWhome from './Components/GWhome.jsx'
+import GWpage from './Components/GWpage.jsx'
+import { WardProvider } from './Contexts/WardContext.jsx'
+import PatientDetails from './Components/PatientDetails.jsx'
+import BedAssign from './Components/BedAssign.jsx'
 
 const router = createHashRouter([
   {
@@ -29,14 +33,31 @@ const router = createHashRouter([
     {
       path: '/ipd/general_ward',
       element: <GWhome />
-    }
+    },
+    {
+      path: '/ipd/general_ward/:gw',
+      element: <GWpage />
+
+    },
+    {
+      path: '/ipd/general_ward/:gw/patients/:patientID',
+      element: <PatientDetails />
+
+    },
+    // {
+    //   path: '/ipd/general_ward/:gw/patients',
+    //   element: <BedAssign />
+
+    // }
   
 ])
 
 createRoot(document.getElementById('root')).render(
+  <WardProvider >
   <RouterProvider router={router}>
   <StrictMode>
     <App />
   </StrictMode>
   </RouterProvider>
+  </WardProvider>
 )
