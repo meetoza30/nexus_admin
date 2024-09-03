@@ -81,80 +81,76 @@ function AddPatient() {
                     <label htmlFor="emergencyContact">Emergency Contact:</label>
                     <input type="text" id="emergencyContact" name="emergencyContact" placeholder="Name and Phone Number" />
                 </div>
+
                 <h3>Family History</h3>
-                <div className="form-group">
-                    <label>Hypertension:</label>
-                    <input type="radio" name="hypertension" value="yes" /> Yes
-                    <input type="radio" name="hypertension" value="no" /> No
+                <div className="family-history">
+                    <div className="form-group">
+                        <label>Hypertension:</label>
+                        <input type="radio" name="hypertension" value="yes" /> Yes
+                        <input type="radio" name="hypertension" value="no" /> No
+                    </div>
+                    <div className="form-group">
+                        <label>Heart Disease:</label>
+                        <input type="radio" name="heart_disease" value="yes" /> Yes
+                        <input type="radio" name="heart_disease" value="no" /> No
+                    </div>
+                    <div className="form-group">
+                        <label>Diabetes:</label>
+                        <input type="radio" name="diabetes" value="yes" /> Yes
+                        <input type="radio" name="diabetes" value="no" /> No
+                    </div>
+                    <div className="form-group">
+                        <label>Tuberculosis:</label>
+                        <input type="radio" name="tuberculosis" value="yes" /> Yes
+                        <input type="radio" name="tuberculosis" value="no" /> No
+                    </div>
+                    <div className="form-group">
+                        <label>Asthma:</label>
+                        <input type="radio" name="asthma" value="yes" /> Yes
+                        <input type="radio" name="asthma" value="no" /> No
+                    </div>
+                    <div className="form-group">
+                        <label>Cancer:</label>
+                        <input type="radio" name="cancer" value="yes" /> Yes
+                        <input type="radio" name="cancer" value="no" /> No
+                    </div>
+                    <div className="form-group full-width">
+                        <label>Any other chronic disease:</label>
+                        <input type="text" name="other_disease" placeholder="Specify if any..." />
+                    </div>
                 </div>
 
-                <div className="form-group">
-                    <label>Heart Disease:</label>
-                    <input type="radio" name="heart_disease" value="yes" /> Yes
-                    <input type="radio" name="heart_disease" value="no" /> No
-                </div>
-
-                <div className="form-group">
-                    <label>Diabetes:</label>
-                    <input type="radio" name="diabetes" value="yes" /> Yes
-                    <input type="radio" name="diabetes" value="no" /> No
-                </div>
-
-                <div className="form-group">
-                    <label>Tuberculosis:</label>
-                    <input type="radio" name="tuberculosis" value="yes" /> Yes
-                    <input type="radio" name="tuberculosis" value="no" /> No
-                </div>
-
-                <div className="form-group">
-                    <label>Asthma:</label>
-                    <input type="radio" name="asthma" value="yes" /> Yes
-                    <input type="radio" name="asthma" value="no" /> No
-                </div>
-
-                <div className="form-group">
-                    <label>Cancer:</label>
-                    <input type="radio" name="cancer" value="yes" /> Yes
-                    <input type="radio" name="cancer" value="no" /> No
-                </div>
-
-                <div className="form-group">
-                    <label>Any other chronic disease:</label>
-                    <input type="text" name="other_disease" placeholder="Specify if any..." />
-                </div>
                 <h3>Personal History</h3>
-                <div className="form-group">
-                    <label>Smoking:</label>
-                    <input type="radio" name="smoking" value="yes" onClick={() => showSince('smoking_since')} /> Yes
-                    <input type="radio" name="smoking" value="no" onClick={() => hideSince('smoking_since')} /> No
-                    <input type="text" id="smoking_since" name="smoking_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
-                </div>
-
-                <div className="form-group">
-                    <label>Alcohol:</label>
-                    <input type="radio" name="alcohol" value="yes" onClick={() => showSince('alcohol_since')} /> Yes
-                    <input type="radio" name="alcohol" value="no" onClick={() => hideSince('alcohol_since')} /> No
-                    <input type="text" id="alcohol_since" name="alcohol_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
-                </div>
-
-                <div className="form-group">
-                    <label>Drugs:</label>
-                    <input type="radio" name="drugs" value="yes" onClick={() => showSince('drugs_since')} /> Yes
-                    <input type="radio" name="drugs" value="no" onClick={() => hideSince('drugs_since')} /> No
-                    <input type="text" id="drugs_since" name="drugs_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
-                </div>
-
-                <div className="form-group">
-                    <label>Tobacco:</label>
-                    <input type="radio" name="tobacco" value="yes" onClick={() => showSince('tobacco_since')} /> Yes
-                    <input type="radio" name="tobacco" value="no" onClick={() => hideSince('tobacco_since')} /> No
-                    <input type="text" id="tobacco_since" name="tobacco_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
-                </div>
-
-                <div className="form-group">
-                    <label>Diet:</label>
-                    <input type="radio" name="diet" value="veg" /> Vegetarian
-                    <input type="radio" name="diet" value="non-veg" /> Non-Vegetarian
+                <div className="personal-history">
+                    <div className="form-group">
+                        <label>Smoking:</label>
+                        <input type="radio" name="smoking" value="yes" onClick={() => showSince('smoking_since')} /> Yes
+                        <input type="radio" name="smoking" value="no" onClick={() => hideSince('smoking_since')} /> No
+                        <input type="text" id="smoking_since" name="smoking_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
+                    </div>
+                    <div className="form-group">
+                        <label>Alcohol:</label>
+                        <input type="radio" name="alcohol" value="yes" onClick={() => showSince('alcohol_since')} /> Yes
+                        <input type="radio" name="alcohol" value="no" onClick={() => hideSince('alcohol_since')} /> No
+                        <input type="text" id="alcohol_since" name="alcohol_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
+                    </div>
+                    <div className="form-group">
+                        <label>Drugs:</label>
+                        <input type="radio" name="drugs" value="yes" onClick={() => showSince('drugs_since')} /> Yes
+                        <input type="radio" name="drugs" value="no" onClick={() => hideSince('drugs_since')} /> No
+                        <input type="text" id="drugs_since" name="drugs_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
+                    </div>
+                    <div className="form-group">
+                        <label>Tobacco:</label>
+                        <input type="radio" name="tobacco" value="yes" onClick={() => showSince('tobacco_since')} /> Yes
+                        <input type="radio" name="tobacco" value="no" onClick={() => hideSince('tobacco_since')} /> No
+                        <input type="text" id="tobacco_since" name="tobacco_since" placeholder="Since when? Frequency?" style={{ display: 'none' }} />
+                    </div>
+                    <div className="form-group full-width">
+                        <label>Diet:</label>
+                        <input type="radio" name="diet" value="veg" /> Vegetarian
+                        <input type="radio" name="diet" value="non-veg" /> Non-Vegetarian
+                    </div>
                 </div>
 
                 <button type="submit">Add Patient</button>

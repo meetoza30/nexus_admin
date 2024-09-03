@@ -1,33 +1,26 @@
-/* Container for the ward */
 .ward-container {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
-    /* gap: 20px;  */
     padding: 20px;
     max-width: 70vw;
     margin: 0 auto;
     background-color: #f4f4f4;
     border-radius: 8px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    /* margin-left: 15%; */
     margin-top: 2%;
     margin-bottom: 2.5%;
+}
+#layouthead{
+    margin-left: 12%;
 }
 .gwlayoutcontain{
     width: 80vw;
     height: 85vh;
-    background-color: rgb(227, 227, 227);
+    background-color: #d9d5ff;
     padding: 15px 15px;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 14%;
     border: 2px solid black;
-    /* margin-top: 15%; */
-    /* align-items: center; */
-    /* justify-content: center; */
-
-
 }
 #more_btn{
     margin-bottom: 8px;
@@ -89,12 +82,15 @@
     margin-left: 5%;
 }
 .bed-icon.green {
-    background-color: green;
+    background-color: #e3e3e3;
+    box-shadow: 2px 2px 15px black;
+    color: black;
+    font-weight: 500;
 }
 
 /* Red bed (occupied) */
 .bed-icon.red {
-    background-color: red;
+    background-color: #ababab;
 }
 
 /* Hover effect */

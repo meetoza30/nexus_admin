@@ -8,8 +8,8 @@ function GWhome(){
     return(
         <>
         <div id="heads">
-        <h1>General Wards : </h1>
-        <h2>Navigate through various General Wards to see the availability of beds</h2>
+        <h1>General Wards</h1>
+        <h2 className="navihead">Navigate through various General Wards to see the availability of beds</h2>
         </div>
         <Navbar />
         <div className="gwcontain">

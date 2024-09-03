@@ -24,7 +24,7 @@ const router = createHashRouter([
       element: <Opd />
     },
     {
-      path: '/add_patient',
+      path: '/add_a_patient',
       element: <AddPatient />
     },
     {

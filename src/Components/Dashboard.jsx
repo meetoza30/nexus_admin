@@ -9,17 +9,18 @@ return(
     <>
       
         <h1 id='dashead'>Welcome Doctor! This is your Dashboard.</h1>
-        <div className="container">
-        <Dashcard cardname="Add a patient" img="add_patient" bgColor="green"/>
-        <Dashcard cardname="Clinic (OPD)" img="opd" bgColor="red" />
-        <Dashcard cardname="IPD" img="ipd" bgColor="orange"/>
+        <div className="thecontainer">
+        <div className="cardscontainer">
+        <Dashcard cardname="Add a patient" img="addapatientfinalize" bgColor="green" link="add_a_patient"/>
+        <Dashcard cardname="Clinic (OPD)" img="opdfinal" bgColor="red" link="opd"/>
+        <Dashcard cardname="IPD" img="opd" bgColor="orange" link="ipd"/>
         </div>
-        <div className="container">
+        <div className="cardscontainer">
         <Dashcard cardname="LIS" img="lis" bgColor="FFA500"/>
         <Dashcard cardname="Store & Pharmacy" img="pharmacy" bgColor="FFA500"/>
         <Dashcard cardname="Billing" img="billing" bgColor="FFA500"/>
         </div>
-      
+        </div>
     
     </>
   )

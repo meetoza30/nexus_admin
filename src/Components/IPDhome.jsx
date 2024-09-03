@@ -7,7 +7,7 @@ function IPDhome() {
     return (
         <>
         <Navbar />
-        <h1>Navigate through various wards to see the availability of the beds</h1>
+        <h1 id="navighead">Navigate through various wards to see the availability of the beds</h1>
             <div className="maincontains">
                 <div className="cardbox fstrow">
                     <div className="carditem">

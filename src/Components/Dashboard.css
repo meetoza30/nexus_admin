@@ -1,16 +1,23 @@
-.container {
+.cardscontainer {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; Allows items to wrap to the next line if they don't fit */
+    /* width: 170vw; */
+    /* background-color: cyan; */
     justify-content: space-around;
     margin-top: 5%;
-    padding: 0 5%; /* Adds padding to prevent cards from hitting the screen edges */
-    box-sizing: border-box; /* Ensures padding is included in width/height calculations */
+    margin-bottom: 8%;
+    padding: 0 5%;
+    box-sizing: border-box; 
   }
   
 #dashead{
     text-align: center;
-    margin-top: 2%;
-    font-size: xx-large;
+    margin-top: 5%;
+    font-size: 50px;
+    color: black;
     
+}
+.thecontainer{
+  margin-bottom: 5%;
+  /* width: 101vw; */
 }

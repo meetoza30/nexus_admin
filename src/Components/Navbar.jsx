@@ -25,7 +25,7 @@ function Navbar(){
           <nav id="menu" className={isNavbarVisible ? 'active' : 'hidden'}>
             <ul>
               <li><Link to="/"  onClick={() => handleCardClick('dashboard')}>Dashboard</Link></li>
-              <li><Link to={``} onClick={() => handleCardClick('patient')}>Add a Patient</Link></li>
+              <li><Link to={`/add_a_patient`} onClick={() => handleCardClick('patient')}>Add a Patient</Link></li>
               <li><Link to={`/opd`} onClick={() => handleCardClick('opd')}>Clinic (OPD)</Link></li>
               <li><Link to="/ipd" onClick={() => handleCardClick('ipd')}>IPD</Link></li>
               <li><Link to={``} onClick={() => handleCardClick('lis')}>LIS</Link></li>
